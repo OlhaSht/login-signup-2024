@@ -2,10 +2,20 @@
     background-color:#3ea9f5;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
     margin-bottom: 0 ;
 }
 // #28d2d1
 
 .logo{
     margin-left: 100px;
+}
+.link{
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 100px;
+    padding: 7px 24px 10px 24px;
 }

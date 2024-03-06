@@ -11,8 +11,8 @@ const Header = () => {
       </Link>
       {/* <img src={logo} alt="logo" /> */}
       {pathname ==="/login" ? 
-      <Link to="/sineup">SignUp</Link> : 
-      <Link to="/login">Login</Link>  }
+      <Link  className={styles.link} to="/sineup">SignUp</Link> : 
+      <Link  className={styles.link} to="/login">Login</Link>  }
     </header>
   );
 };
