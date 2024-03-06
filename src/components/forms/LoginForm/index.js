@@ -3,7 +3,7 @@
 import React from 'react';
 import { Form, Formik, Field } from 'formik';
 import Wrappednput from './../Wrappednput/index';
-import styles from './LoginForm.module.scss'
+import styles from '../Forms.module.scss'
 
 const InitialValues = {email:"", password: "" };
 const LoginForm = (props) => {
