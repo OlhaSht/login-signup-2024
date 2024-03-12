@@ -4,15 +4,15 @@ import Wrappednput from "./../Wrappednput/index";
 import { SCHEMA_SIGN_IN } from "./../../utils/schimaValidation";
 import styles from "../Forms.module.scss";
 
-const InitialValues = { email: "", password: "" };
+const initialValues = { email: "", password: "" };
 const SingupForm = (props) => {
   const onSubmit = (values, formikbag) => {
     formikbag.resetForm();
   };
   return (
     <Formik
-      initialValues={InitialValues}
-      schimaValidation={SCHEMA_SIGN_IN}
+      initialValues={initialValues}
+      validationSchema={SCHEMA_SIGN_IN}
       onSubmit={onSubmit}
     >
       {(formikProps) => {

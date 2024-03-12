@@ -2,15 +2,20 @@ import React from "react";
 import { Form, Formik, Field } from "formik";
 import Wrappednput from "./../Wrappednput/index";
 import styles from "../Forms.module.scss";
+import { SCHEMA_SIGN_IN } from './../../utils/schimaValidation';
 
-const InitialValues = { email: "", password: "" };
+const initialValues = { email: "", password: "", lastname: "",
+fname: "", displayname: "", passwordconfirm: "" };
 const LoginForm = (props) => {
   const onSubmit = (values, formikbag) => {
     formikbag.resetForm();
   };
   return (
     <div className={styles.container}>
-      <Formik initialValues={InitialValues} onSubmit={onSubmit}>
+      <Formik 
+      initialValues={initialValues}
+      validationSchema={SCHEMA_SIGN_IN}
+       onSubmit={onSubmit}>
         {(formikProps, FieldInputProps) => {
           return (
             <Form>
